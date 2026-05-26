@@ -14,26 +14,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 plugins {
-    alias(libs.plugins.buzbuz.androidLibrary)
-    alias(libs.plugins.buzbuz.androidUnitTest)
-    alias(libs.plugins.buzbuz.flavour)
-    alias(libs.plugins.buzbuz.hilt)
+    id("com.android.asset-pack")
 }
 
-android {
-    namespace = "com.smartautoclicker.code.smart.detectionmodels"
-}
-
-dependencies {
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.androidx.annotation)
-    implementation(project(":core:common:base"))
-
-    playStoreImplementation(libs.google.play.asset.delivery)
-    playStoreImplementation(libs.google.play.asset.delivery.ktx)
-    playStoreImplementation(libs.kotlinx.coroutines.play.services)
-
-    testImplementation(libs.kotlinx.coroutines.test)
+assetPack {
+    packName = "text_model_rec_tamil"
+    dynamicDelivery {
+        deliveryType = "on-demand"
+    }
 }
