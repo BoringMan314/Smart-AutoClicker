@@ -31,8 +31,10 @@ import com.buzbuz.smartautoclicker.core.detection.data.getInsideButWiderThanDete
 import com.buzbuz.smartautoclicker.core.detection.data.getValidCustomDetectionArea
 import com.buzbuz.smartautoclicker.core.detection.data.isValid
 import com.buzbuz.smartautoclicker.core.detection.utils.TEST_DETECTION_THRESHOLD_ALL
+import com.buzbuz.smartautoclicker.core.detection.utils.TEST_DETECTION_THRESHOLD_STANDARD
 import com.buzbuz.smartautoclicker.core.detection.utils.loadTestBitmap
 import org.junit.After
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
@@ -41,7 +43,7 @@ import org.junit.runner.RunWith
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)
-class DetectionTests {
+class TemplateMatcherTests {
 
     private lateinit var context: Context
     private lateinit var testedDetector: ImageDetector
@@ -52,7 +54,7 @@ class DetectionTests {
         testedDetector = NativeDetector.newInstance() ?:
             throw IllegalStateException("Can't instantiate detector for tests")
 
-        testedDetector.init(context)
+        testedDetector.init()
     }
 
     @After
@@ -173,6 +175,50 @@ class DetectionTests {
         assertTrue("Image detection failed", result?.isValid() == false)
     }
 
+    @Test
+    fun detection_ColorCondition_ColorScreen_IsDetected() {
+        // Given
+        val screenImage = TestImage.Screen.TutorialWithTarget
+        val conditionImage = TestImage.Condition.TutorialTargetBlue
+        val screenBitmap = context.loadTestBitmap(screenImage)
+        val conditionBitmap = context.loadTestBitmap(conditionImage)
+
+        // When
+        testedDetector.setScreenBitmap(screenBitmap, "")
+        val result = testedDetector.detectImage(
+            conditionBitmap = conditionBitmap,
+            conditionWidth = conditionBitmap.width,
+            conditionHeight = conditionBitmap.height,
+            detectionArea = Rect(0, 0, screenImage.size.x, screenImage.size.y),
+            threshold = TEST_DETECTION_THRESHOLD_STANDARD,
+        )
+
+        // Then
+        assertTrue("Color condition should match color screen", result.isDetected)
+    }
+
+    @Test
+    fun detection_GrayscaleCondition_ColorScreen_IsNotDetected() {
+        // Given
+        val screenImage = TestImage.Screen.TutorialWithTarget
+        val conditionImage = TestImage.Condition.TutorialTargetGrayscale
+        val screenBitmap = context.loadTestBitmap(screenImage)
+        val conditionBitmap = context.loadTestBitmap(conditionImage)
+
+        // When
+        testedDetector.setScreenBitmap(screenBitmap, "")
+        val result = testedDetector.detectImage(
+            conditionBitmap = conditionBitmap,
+            conditionWidth = conditionBitmap.width,
+            conditionHeight = conditionBitmap.height,
+            detectionArea = Rect(0, 0, screenImage.size.x, screenImage.size.y),
+            threshold = TEST_DETECTION_THRESHOLD_STANDARD,
+        )
+
+        // Then
+        assertFalse("Grayscale condition should not match color screen", result.isDetected)
+    }
+
     private fun ImageDetector.executeImageDetectionTest(
         context: Context,
         screenImage: TestImage.Screen,
@@ -199,11 +245,6 @@ class DetectionTests {
                 actualConfidence = results.confidenceRate,
             )
         }
-
-    private fun TestResults.print() {
-        println("Confidence=$actualConfidence/$expectedConfidence; " +
-                "Position=$actualCenterPosition/$expectedCenterPosition}; isValid=${isValid()}")
-    }
 }
 
 
