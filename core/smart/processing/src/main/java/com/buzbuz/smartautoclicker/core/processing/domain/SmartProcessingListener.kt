@@ -33,11 +33,13 @@ interface SmartProcessingListener {
      * @param scenario the [Scenario] running for the processing session.
      * @param counters the list of [Counter] to be processed for this scenario.
      * @param generateLiveEvents tells if the live debugging events should be generated.
+     * @param generateReport tells if the debug report should be generated.
      */
     fun onSessionStarted(
         scenario: Scenario,
         counters: List<Counter>,
         generateLiveEvents: Boolean,
+        generateReport: Boolean,
     ) = Unit
 
 

@@ -239,6 +239,7 @@ class DetectorEngine @Inject constructor(
                     scenario = scenario,
                     counters = counters,
                     generateLiveEvents = liveDebugging,
+                    generateReport = generateReport,
                 )
             }
 

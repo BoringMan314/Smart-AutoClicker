@@ -62,7 +62,6 @@ import kotlin.time.Duration.Companion.milliseconds
 @Singleton
 internal class DebugEngine @Inject constructor(
     @Dispatcher(IO) ioDispatcher: CoroutineDispatcher,
-    private val debugConfigurationLocalDataSource: DebugConfigurationLocalDataSource,
     private val debugReportLocalDataSource: DebugReportLocalDataSource,
     private val overviewRecorder: DebugReportOverviewRecorder,
     private val eventOccurrencesRecorder: EventOccurrencesRecorder,
@@ -92,9 +91,10 @@ internal class DebugEngine @Inject constructor(
         scenario: Scenario,
         counters: List<Counter>,
         generateLiveEvents: Boolean,
+        generateReport: Boolean,
     ) {
         coroutineScopeIo.launch {
-            isReportEnabled = debugConfigurationLocalDataSource.isDebugReportEnabled()
+            isReportEnabled = generateReport
             shouldGenerateLiveEvents = generateLiveEvents
             _isDebuggingSession.value = true
 

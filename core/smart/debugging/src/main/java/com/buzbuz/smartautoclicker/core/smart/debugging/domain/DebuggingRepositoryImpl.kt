@@ -69,7 +69,7 @@ internal class DebuggingRepositoryImpl @Inject constructor(
     override fun setDebuggingConfig(debugView: Boolean, debugReport: Boolean) {
         ioScope.launch {
             // Debug report is being disabled, remove report files
-            if (!debugReport && isDebugViewEnabled()) debugReportDataSource.deleteReport()
+            if (!debugReport) debugReportDataSource.deleteReport()
 
             debugConfigurationDataSource.setDebuggingConfig(
                 debugView = debugView,
