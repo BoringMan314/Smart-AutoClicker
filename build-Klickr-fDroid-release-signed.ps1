@@ -14,7 +14,7 @@ $localPropertiesPath = Join-Path $rootDir "local.properties"
 $keystorePath = Join-Path $rootDir "smartautoclicker/smartautoclicker.jks"
 $releaseKeystoreAscFullPath = Join-Path $rootDir $ReleaseKeystoreAscPath
 $apkOutputPath = Join-Path $rootDir "smartautoclicker/build/outputs/apk/fDroid/release/smartautoclicker-fDroid-release.apk"
-$finalApkPath = Join-Path $rootDir "Klickr-fDroid-release-signed.apk"
+$gradleKtsPath = Join-Path $rootDir "smartautoclicker/build.gradle.kts"
 
 function Get-LocalPropertyValue {
     param(
@@ -33,6 +33,21 @@ function Get-LocalPropertyValue {
     return $null
 }
 
+function Get-VersionNameFromGradle {
+    param([string]$Path)
+
+    if (-not (Test-Path $Path)) {
+        throw "build.gradle.kts not found: $Path"
+    }
+
+    $content = Get-Content -Path $Path -Raw
+    if ($content -match 'versionName\s*=\s*"([^"]+)"') {
+        return $Matches[1]
+    }
+
+    throw "Unable to parse versionName from build.gradle.kts"
+}
+
 if (-not $SigningStorePassword) { $SigningStorePassword = $env:SIGNING_STORE_PASSWORD }
 if (-not $SigningKeyAlias) { $SigningKeyAlias = $env:SIGNING_KEY_ALIAS }
 if (-not $SigningKeyPassword) { $SigningKeyPassword = $env:SIGNING_KEY_PASSWORD }
@@ -42,6 +57,10 @@ if (-not $SigningKeyAlias) { $SigningKeyAlias = Get-LocalPropertyValue -Path $lo
 if (-not $SigningKeyPassword) { $SigningKeyPassword = Get-LocalPropertyValue -Path $localPropertiesPath -Key "signingKeyPassword" }
 if (-not $ReleaseKeystorePassphrase) { $ReleaseKeystorePassphrase = $env:RELEASE_KEYSTORE_PASSPHRASE }
 if (-not $ReleaseKeystorePassphrase) { $ReleaseKeystorePassphrase = Get-LocalPropertyValue -Path $localPropertiesPath -Key "releaseKeystorePassphrase" }
+
+$versionName = Get-VersionNameFromGradle -Path $gradleKtsPath
+$finalApkName = "Klickr-fDroid-release-signed-$versionName.apk"
+$finalApkPath = Join-Path $rootDir $finalApkName
 
 if (-not (Test-Path $keystorePath) -and (Test-Path $releaseKeystoreAscFullPath)) {
     if (-not $ReleaseKeystorePassphrase) {
@@ -63,6 +82,7 @@ if (-not $SigningStorePassword -or -not $SigningKeyAlias -or -not $SigningKeyPas
 }
 
 Write-Host "Building signed fDroid release APK (upstream workflow-compatible)..."
+Write-Host "versionName=$versionName -> $finalApkName"
 $env:JAVA_TOOL_OPTIONS = "-Djava.net.preferIPv4Stack=true"
 
 # Match release.yml: no random applicationId (see nightly-obfuscation.yml for -PrandomizeAppId=true).
@@ -96,3 +116,6 @@ if (-not (Test-Path $apkOutputPath)) {
 Copy-Item -Path $apkOutputPath -Destination $finalApkPath -Force
 (Get-Item -LiteralPath $finalApkPath).LastWriteTime = Get-Date
 Write-Host "Done: $finalApkPath"
+
+$env:BUILD_VERSION_NAME = $versionName
+$env:BUILD_APK_NAME = $finalApkName
