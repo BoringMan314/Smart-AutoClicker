@@ -73,4 +73,19 @@
         détection, puis démarrez le jeu.</string>
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">Félicitations !\n\nVous savez désormais comment combiner plusieurs conditions pour un Événement, mais il y a encore beaucoup à apprendre !</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">Vous devez sélectionner la position exacte à cliquer, recommencez donc la partie pour afficher le personnage bleu, puis sélectionnez sa position.\n\nUne fois la position correcte, cliquez sur le bouton Valider pour l\'enregistrer.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">Vous ne pouvez pas interagir avec le jeu tant que le sélecteur de position est visible, mais vous pouvez utiliser ce bouton pour l\'afficher ou le masquer et lever cette restriction à volonté.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">Comme nous voulons cliquer le plus vite possible, nous pouvons conserver la durée d\'appui par défaut de 1 ms, la plus basse possible. Le clic est maintenant correctement configuré !\n\nCliquez sur le bouton Enregistrer pour l\'ajouter et revenir à la liste des actions.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">Fermez la liste des actions pour revenir à la configuration de l\'événement.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">Votre événement a maintenant une condition et une action : il sait quoi exécuter et quand.\n\nCliquez sur le bouton Enregistrer pour l\'ajouter et revenir à la boîte de dialogue du scénario.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">Toutes les modifications doivent être enregistrées dans votre scénario pour être prises en compte.\n\nCliquez sur le bouton Enregistrer pour sauvegarder vos changements.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">Nous sommes prêts à gagner cette partie !\n\nCliquez sur le bouton Démarrer pour lancer la détection, puis démarrez le jeu.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">Félicitations !\n\nVous savez maintenant comment exécuter une action lorsqu\'une image n\'est pas visible à l\'écran !</string>
 </resources>

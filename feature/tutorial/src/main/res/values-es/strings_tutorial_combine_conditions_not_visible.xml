@@ -76,4 +76,19 @@
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">¡Felicitaciones!\n\nAhora sabes cómo combinar varias condiciones para un evento.
         ¡pero hay mucho más que aprender!</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">Debes seleccionar la posición exacta a pulsar, así que vuelve a iniciar el juego para mostrar el personaje azul y elige su posición.\n\nCuando la posición sea correcta, pulsa el botón de validar para guardarla.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">No puedes interactuar con el juego mientras el selector de posición esté visible, pero puedes usar este botón para mostrarlo u ocultarlo y quitar esa restricción cuando quieras.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">Como queremos pulsar lo más rápido posible, podemos mantener la duración de pulsación predeterminada de 1 ms, el valor más bajo. ¡El clic ya está configurado correctamente!\n\nPulsa el botón Guardar para registrarlo y volver a la lista de acciones.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">Cierra la lista de acciones para volver a la configuración del evento.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">Tu evento ahora tiene una condición y una acción, así que sabe qué ejecutar y cuándo.\n\nPulsa el botón Guardar para registrarlo y volver al diálogo del escenario.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">Todos los cambios deben guardarse en tu escenario para que se registren.\n\nPulsa el botón Guardar para guardar tus cambios.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">¡Estamos listos para ganar esta partida!\n\nPulsa el botón Iniciar para comenzar la detección y, después, inicia el juego.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">¡Enhorabuena!\n\n¡Ya sabes cómo ejecutar algo cuando una imagen no está visible en la pantalla!</string>
 </resources>

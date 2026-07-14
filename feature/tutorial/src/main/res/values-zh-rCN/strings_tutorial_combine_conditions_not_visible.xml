@@ -56,4 +56,19 @@
     <string name="message_tutorial_combine_conditions_not_visible_target_step_16">我们准备好赢得这场比赛了！\n\n点击开始按钮以开始检测，然后开始游戏。</string>
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">恭喜！\n\n你现在知道如何为事件组合多个条件，但还有很多东西要学习！</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">你需要选择要点击的精确位置，因此需要重新开始游戏以显示蓝色角色，然后选择其位置。\n\n位置正确后，点击验证按钮保存。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">位置选择器可见时无法与游戏互动，但你可以使用此按钮显示和隐藏它，以便随时解除该限制。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">由于我们希望尽快点击，可以保留默认的 1ms 按压持续时间（这是最低值）。点击现已正确配置！\n\n点击保存按钮以注册并返回操作列表。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">关闭操作列表，返回事件配置。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">你的事件现在有一个条件和一个操作，这意味着它知道何时执行什么。\n\n点击保存按钮以注册并返回方案对话框。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">所有更改都必须保存到方案中才会生效。\n\n点击保存按钮以保存你的更改。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">我们准备好赢得这场比赛了！\n\n点击开始按钮以开始检测，然后开始游戏。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">恭喜！\n\n你现在知道如何在图像未显示于屏幕时执行操作了！</string>
 </resources>

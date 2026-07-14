@@ -78,4 +78,19 @@
     
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">Parabéns!\n\nAgora você sabe como combinar múltiplas Condições para um Evento,
             mas há muito mais para aprender!</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">Você precisa selecionar a posição exata a ser clicada, então inicie o jogo novamente para exibir o personagem azul e selecione a posição dele.\n\nQuando a posição estiver correta, toque no botão Validar para salvá-la.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">Você não pode interagir com o jogo enquanto o seletor de posição estiver visível, mas pode usar este botão para mostrá-lo ou ocultá-lo e remover a restrição quando quiser.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">Como queremos clicar o mais rápido possível, podemos manter a duração de pressão padrão de 1 ms, o valor mais baixo. O clique agora está configurado corretamente!\n\nToque no botão Salvar para registrá-lo e voltar à lista de ações.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">Feche a lista de ações para voltar à configuração do evento.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">Seu evento agora tem uma condição e uma ação, ou seja, sabe o que executar e quando.\n\nToque no botão Salvar para registrá-lo e voltar à caixa de diálogo do cenário.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">Todas as alterações devem ser salvas no seu cenário para serem registradas.\n\nToque no botão Salvar para salvar suas alterações.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">Estamos prontos para vencer este jogo!\n\nToque no botão Iniciar para começar a detecção e, em seguida, inicie o jogo.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">Parabéns!\n\nAgora você sabe como executar algo quando uma imagem não está visível na tela!</string>
 </resources>

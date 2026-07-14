@@ -76,4 +76,19 @@
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">Вітаємо!\n\nТепер ви знаєте, як комбінувати кілька умов для події,
         але є ще багато чого вивчити!</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">Потрібно вибрати точну позицію для натискання, тому знову запустіть гру, щоб показати синього персонажа, і виберіть його позицію.\n\nКоли позиція правильна, натисніть кнопку підтвердження, щоб зберегти її.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">Поки видно селектор позиції, взаємодіяти з грою не можна, але цією кнопкою можна показати або сховати його й зняти обмеження будь-коли.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">Оскільки ми хочемо натискати якомога швидше, можна залишити тривалість натискання за замовчуванням — 1 мс (мінімальне значення). Натискання налаштовано правильно!\n\nНатисніть «Зберегти», щоб зареєструвати його й повернутися до списку дій.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">Закрийте список дій, щоб повернутися до налаштування події.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">У події тепер є умова й дія — вона знає, що виконувати і коли.\n\nНатисніть «Зберегти», щоб зареєструвати її й повернутися до діалогу сценарію.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">Усі зміни потрібно зберегти в сценарії, щоб вони набули чинності.\n\nНатисніть «Зберегти», щоб зберегти зміни.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">Ми готові виграти цю гру!\n\nНатисніть кнопку запуску, щоб почати виявлення, потім почніть гру.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">Вітаємо!\n\nТепер ви знаєте, як виконувати дію, коли зображення не видно на екрані!</string>
 </resources>

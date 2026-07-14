@@ -37,4 +37,19 @@
     <string name="message_tutorial_combine_conditions_not_visible_target_step_15">登録するには、すべての変更をシナリオに保存する必要があります。\n\n保存ボタンをクリックして変更を保存します。</string>
     <string name="message_tutorial_combine_conditions_not_visible_target_step_16">私たちはこの試合に勝つ準備ができています!\n\n開始ボタンをクリックして開始します\n        検出してゲームを開始します。</string>
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">おめでとう！\n\nこれで、イベントの複数の条件を組み合わせる方法がわかりました。\n        しかし、学ぶべきことはまだたくさんあります。</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">クリックする正確な位置を選ぶ必要があるため、もう一度ゲームを開始して青いキャラクターを表示し、その位置を選択してください。\n\n位置が正しいことを確認したら、検証ボタンを押して保存します。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">位置セレクターが表示されている間はゲームを操作できませんが、このボタンで表示／非表示を切り替え、制限をいつでも解除できます。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">できるだけ速くクリックしたいので、既定の押下時間 1ms（最小値）のままにして構いません。クリックの設定は完了です！\n\n保存ボタンを押して登録し、アクション一覧に戻ります。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">アクション一覧を閉じて、イベント設定に戻ります。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">イベントに条件とアクションがそろい、いつ・何を実行するかを把握しています。\n\n保存ボタンを押して登録し、シナリオ画面に戻ります。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">変更を有効にするには、シナリオに保存する必要があります。\n\n保存ボタンを押して変更を保存します。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">ゲームに勝つ準備ができました！\n\n開始ボタンで検出を開始し、その後ゲームを開始してください。</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">おめでとうございます！\n\n画面に画像が表示されていないときに処理を実行する方法が分かりました！</string>
 </resources>

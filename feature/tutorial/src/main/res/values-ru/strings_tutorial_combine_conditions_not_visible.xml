@@ -76,4 +76,19 @@
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">Поздравляем!\n\nТеперь вы знаете, как комбинировать несколько условий для события,
         но есть еще многое изучить!</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">Нужно выбрать точную позицию для нажатия, поэтому снова запустите игру, чтобы отобразить синего персонажа, и выберите его позицию.\n\nКогда позиция верна, нажмите кнопку подтверждения, чтобы сохранить её.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">Пока виден селектор позиции, взаимодействовать с игрой нельзя, но этой кнопкой можно показать или скрыть его и снять ограничение когда угодно.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">Поскольку мы хотим нажимать как можно быстрее, можно оставить длительность нажатия по умолчанию — 1 мс (минимальное значение). Нажатие настроено правильно!\n\nНажмите «Сохранить», чтобы зарегистрировать его и вернуться к списку действий.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">Закройте список действий, чтобы вернуться к настройке события.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">У события теперь есть условие и действие — оно знает, что выполнять и когда.\n\nНажмите «Сохранить», чтобы зарегистрировать его и вернуться к диалогу сценария.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">Все изменения нужно сохранить в сценарии, чтобы они вступили в силу.\n\nНажмите «Сохранить», чтобы сохранить изменения.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">Мы готовы выиграть эту игру!\n\nНажмите кнопку запуска, чтобы начать обнаружение, затем начните игру.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">Поздравляем!\n\nТеперь вы знаете, как выполнять действие, когда изображение не видно на экране!</string>
 </resources>

@@ -76,4 +76,19 @@
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">تهانينا!\n\nأنت تعرف الآن كيفية الجمع بين شروط متعددة لحدث ما،
         ولكن هناك الكثير لنتعلمه!</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">تحتاج إلى تحديد الموضع الدقيق للنقر، لذا أعد تشغيل اللعبة لعرض الشخصية الزرقاء ثم حدد موضعها.\n\nبمجرد أن يكون الموضع صحيحًا، انقر على زر التحقق لحفظه.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">لا يمكنك التفاعل مع اللعبة أثناء ظهور محدد الموضع، لكن يمكنك استخدام هذا الزر لإظهاره أو إخفائه وإزالة هذا القيد في أي وقت.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">بما أننا نريد النقر بأسرع ما يمكن، يمكننا الإبقاء على مدة الضغط الافتراضية وهي 1 مللي ثانية، وهي أقل قيمة ممكنة. النقرة مضبوطة الآن بشكل صحيح!\n\nانقر على زر الحفظ لتسجيلها والعودة إلى قائمة الإجراءات.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">أغلق قائمة الإجراءات للعودة إلى إعداد الحدث.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">يحتوي حدثك الآن على شرط وإجراء، أي أنه يعرف ماذا ينفّذ ومتى.\n\nانقر على زر الحفظ لتسجيله والعودة إلى مربع حوار السيناريو.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">يجب حفظ جميع التغييرات في السيناريو ليتم تسجيلها.\n\nانقر على زر الحفظ لحفظ تغييراتك.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">نحن مستعدون للفوز بهذه اللعبة!\n\nانقر على زر البدء لبدء الاكتشاف، ثم ابدأ اللعبة.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">تهانينا!\n\nتعرف الآن كيف تنفّذ شيئاً عندما تكون صورة غير ظاهرة على الشاشة!</string>
 </resources>

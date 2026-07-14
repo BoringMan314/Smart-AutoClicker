@@ -75,4 +75,19 @@
     rilevazione e quindi avvia il gioco.</string>
 
     <string name="message_tutorial_combine_conditions_not_visible_target_step_17">Congratulazioni!\n\nOra sai come combinare condizioni multiple per un evento, ma c\'è ancora molto da imparare!</string>
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_18">Devi selezionare la posizione esatta da toccare, quindi riavvia il gioco per mostrare il personaggio blu e seleziona la sua posizione.\n\nQuando la posizione è corretta, tocca il pulsante di conferma per salvarla.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_secondary_18">Non puoi interagire con il gioco mentre il selettore di posizione è visibile, ma puoi usare questo pulsante per mostrarlo o nasconderlo e rimuovere la restrizione quando vuoi.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_19">Poiché vogliamo toccare il più velocemente possibile, possiamo mantenere la durata di pressione predefinita di 1 ms, il valore più basso. Il tocco è ora configurato correttamente!\n\nTocca il pulsante Salva per registrarlo e tornare all\'elenco delle azioni.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_20">Chiudi l\'elenco delle azioni per tornare alla configurazione dell\'evento.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_21">Il tuo evento ha ora una condizione e un\'azione, quindi sa cosa eseguire e quando.\n\nTocca il pulsante Salva per registrarlo e tornare alla finestra dello scenario.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_22">Tutte le modifiche devono essere salvate nello scenario per essere registrate.\n\nTocca il pulsante Salva per salvare le modifiche.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_23">Siamo pronti a vincere questa partita!\n\nTocca il pulsante Avvia per iniziare il rilevamento e poi avvia il gioco.</string>
+
+    <string name="message_tutorial_combine_conditions_not_visible_target_step_24">Congratulazioni!\n\nOra sai come eseguire qualcosa quando un\'immagine non è visibile sullo schermo!</string>
 </resources>
