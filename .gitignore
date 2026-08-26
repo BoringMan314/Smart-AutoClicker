@@ -96,4 +96,6 @@ scripts/**/*.pyc
 /*.zip
 /*.bat
 /*.ps1
+!/build_win10.bat
+!/build-Klickr-fDroid-release-signed.ps1
 *.url
