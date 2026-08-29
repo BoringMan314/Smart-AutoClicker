@@ -86,11 +86,11 @@ function Get-UniversalKlickrApkFileName {
     )
 
     if ($GradleApkFileName -eq "smartautoclicker-fDroid-universal-release.apk") {
-        return "Klickr-fDroid-release-signed-$VersionName.apk"
+        return "Klickr-fDroid-release-$VersionName.apk"
     }
 
     if ($GradleApkFileName -eq "smartautoclicker-fDroid-release.apk") {
-        return "Klickr-fDroid-release-signed-$VersionName.apk"
+        return "Klickr-fDroid-release-$VersionName.apk"
     }
 
     return $null
@@ -167,7 +167,7 @@ if (-not $gradleApks -or $gradleApks.Count -eq 0) {
     throw "Gradle produced no APKs: $apkOutputDir"
 }
 
-Write-BuildProgress ($progressStart + 3) "Copy universal APK to project root (Klickr-fDroid-release-signed-$versionName.apk)"
+Write-BuildProgress ($progressStart + 3) "Copy universal APK to project root (Klickr-fDroid-release-$versionName.apk)"
 
 $copiedApks = @()
 foreach ($gradleApk in $gradleApks) {
@@ -188,7 +188,7 @@ if ($copiedApks.Count -eq 0) {
     throw "Universal APK was not copied to project root"
 }
 
-$expectedPath = Join-Path $rootDir ("Klickr-fDroid-release-signed-{0}.apk" -f $versionName)
+$expectedPath = Join-Path $rootDir ("Klickr-fDroid-release-{0}.apk" -f $versionName)
 if (-not (Test-Path $expectedPath)) {
     throw "Missing expected APK: $expectedPath"
 }

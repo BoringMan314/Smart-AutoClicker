@@ -16,7 +16,7 @@ set "BUILD_PROGRESS_TOTAL=%PROG_TOTAL%"
 set "BUILD_PROGRESS_START=4"
 
 call :show_progress 1 %PROG_TOTAL% "Preparing build env (fDroid signed, universal only)"
-echo     Output: %CD%\Klickr-fDroid-release-signed-^<versionName^>.apk
+echo     Output: %CD%\Klickr-fDroid-release-^<versionName^>.apk
 echo     Upstream release.yml: assembleFDroidRelease (copy universal only)
 echo.
 
@@ -39,7 +39,7 @@ if exist "Klickr-fDroid-release-signed.apk" (
     del /f /q "Klickr-fDroid-release-signed.apk" >nul 2>&1
     set "OLD_REMOVED=1"
 )
-for %%F in ("Klickr-fDroid-release-signed-*.apk" "Klickr-fDroid-universal-release-*.apk" "Klickr-fDroid-*-release-*.apk") do (
+for %%F in ("Klickr-fDroid-release-*.apk" "Klickr-fDroid-release-signed-*.apk" "Klickr-fDroid-universal-release-*.apk" "Klickr-fDroid-*-release-*.apk") do (
     if exist %%F (
         attrib -r "%%F" >nul 2>&1
         del /f /q "%%F" >nul 2>&1
@@ -65,14 +65,17 @@ if errorlevel 1 (
 call :show_progress 6 %PROG_TOTAL% "Verify universal APK"
 set "APK_COUNT=0"
 set "LAST_APK="
-for %%F in ("Klickr-fDroid-release-signed-*.apk") do (
+for %%F in ("Klickr-fDroid-release-*.apk") do (
     if exist %%F (
-        set /a APK_COUNT+=1
-        set "LAST_APK=%%~nxF"
+        echo %%~nxF | findstr /i /c:"-signed-" /c:"universal-release" >nul
+        if errorlevel 1 (
+            set /a APK_COUNT+=1
+            set "LAST_APK=%%~nxF"
+        )
     )
 )
 if !APK_COUNT! LSS 1 (
-    call :fail "APK not found: Klickr-fDroid-release-signed-*.apk"
+    call :fail "APK not found: Klickr-fDroid-release-^<versionName^>.apk"
 )
 
 call :show_progress 7 %PROG_TOTAL% "Build complete"
